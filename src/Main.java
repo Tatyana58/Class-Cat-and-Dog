@@ -40,6 +40,8 @@ public class Main {
         dog.name = "Тузик";
         dog.weight = 15;
 
+        cat.printInfo();
+
         System.out.println(
                 "Домашнее животное: " + dog.type +
                         "\nКличка: " + dog.name +
@@ -64,6 +66,19 @@ public class Main {
                         "\nСколько животное съело: " + dog.amountOfFood);
 
         System.out.println("Общее количество съеденной еды: " + Pet.amountOfAllFood);
+// замена того что выше
+        dog.printInfo();
+
+        Pet.printStaticInfo();
+
+        cat.eat(4);
+        dog.eat(6);
+        dog.name=("Барбос");
+
+        cat.printInfo();
+        dog.printInfo();
+
+        Pet.printStaticInfo();
 
     }
 }

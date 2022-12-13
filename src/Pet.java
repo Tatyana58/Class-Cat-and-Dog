@@ -33,4 +33,14 @@ public class Pet {
         this.name = name;
         System.out.println("Теперь это домашнее животное зовут " + this.name);
     }
+    void printInfo() {
+        System.out.println(
+                "Домашнее животное: " + type +
+                        "\nКличка: " + name +
+                        "\nВес: " + weight +
+                        "\nСколько животное съело: " + amountOfFood);
+    }
+    static void printStaticInfo() {
+        System.out.println("Общее количество съеденной еды: " + amountOfAllFood);
+    }
 }
