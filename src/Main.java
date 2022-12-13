@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Классы Кот и Собака");
         Pet pet = new Pet();
-        pet.type = "Кот";
+        /*pet.type = "Кот";
         pet.name = "Барсик";
         pet.weight = 10;
 
@@ -22,5 +22,9 @@ public class Main {
                 "Домашнее животное: " + pet.type +
                         "\nКличка: " + pet.name +
                         "\nВес: " + pet.weight);
+    }
+
+         */
+        pet.eat(1).eat(1).run();
     }
 }
